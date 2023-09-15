@@ -6,7 +6,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-evenly;
   min-height: 100vh;
-  background-color: #030404;
+  /* background-color: #030404; */
+  background: linear-gradient(180deg, #030404 0%, rgba(3, 4, 4, 0.81) 74.48%, rgba(3, 4, 4, 0.00) 100%), url(/background1.jpg), lightgray 50% / cover no-repeat;
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
