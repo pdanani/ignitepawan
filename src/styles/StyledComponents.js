@@ -104,7 +104,7 @@ export const CountdownContainer = styled.div`
   max-width: 450px;
   z-index:1;
   height: 150px;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-color:#fff;
   @media (min-width: 600px) {
     width: 450px;
@@ -134,45 +134,63 @@ const shine = keyframes`
 `;
 
 export const RedirectButton = styled.button`
+  margin: 2em 0;
   padding: 0.5em 2em;
-  z-index: 1;
-  min-height: 150px;
-  font-size: 2em;
+  min-width: 230px;
+  min-height: 100px;
+  width: 30%;
+  height: 50%;
+  background: linear-gradient(170deg, #81010169, #992f2f, #520a0a);
+  color: #ffeeee;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  border-radius: 20px;
+  font-size: 1em;
   font-weight: bold;
   cursor: pointer;
-  background: linear-gradient(90deg, #DC143C 25%, #FF0000 50%, #DC143C 75%);
-  background-size: 220% 220%;
-  color: #ffffff;
-  border: none;
-  border-radius: 25px;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); /* Comically 3D effect */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  width: auto;
-  max-width: 430px;
-  margin: 0 auto;
-  letter-spacing: normal;
-  animation: ${shine} 9s linear infinite;
-  text-transform: none;
-  white-space: pre-line;
-  text-align: center;
-  line-height: 1.2;
-  opacity: 0.8;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
-  }
-
-  &:active {
-    border-radius: 25px; /* Maintains border-radius on active state */
-  }
-
-  @media (max-width: 600px) {
-    max-width: 100%;
-    font-size: 1.5em;
-    padding: 0.4em 1.5em;
-  }
+  z-index: 1;
 `;
+
+// export const RedirectButton = styled.button`
+//   padding: 0.5em 2em;
+//   z-index: 1;
+//   min-height: 150px;
+//   font-size: 2em;
+//   font-weight: bold;
+//   cursor: pointer;
+//   background: linear-gradient(90deg, #DC143C 25%, #FF0000 50%, #DC143C 75%);
+//   background-size: 220% 220%;
+//   color: #ffffff;
+//   border: none;
+//   border-radius: 25px;
+//   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); /* Comically 3D effect */
+//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+//   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+//   width: auto;
+//   max-width: 430px;
+//   margin: 0 auto;
+//   letter-spacing: normal;
+//   animation: ${shine} 9s linear infinite;
+//   text-transform: none;
+//   white-space: pre-line;
+//   text-align: center;
+//   line-height: 1.2;
+//   opacity: 0.8;
+//   &:hover {
+//     transform: scale(1.05);
+//     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+//   }
+
+//   &:active {
+//     border-radius: 25px; /* Maintains border-radius on active state */
+//   }
+
+//   @media (max-width: 600px) {
+//     max-width: 100%;
+//     font-size: 1.5em;
+//     padding: 0.4em 1.5em;
+//   }
+// `;
 
 
 export const TopContainer = styled.div`
