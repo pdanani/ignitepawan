@@ -55,7 +55,7 @@ const App = () => {
           zIndex: 0,
         }}
       />
-      )
+
       <TopContainer>
         <img src={pcrLogo} alt="PCRLOGO" style={{ marginBottom: '0' }} />
         <Title>2023 Leadership Conference</Title>

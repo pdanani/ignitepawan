@@ -18,9 +18,9 @@ export const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px; 
-  width: 100%; 
-  margin: 0 auto; 
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
   z-index:1;
  contrast:2;
   mix-blend-mode: lighten;
@@ -30,7 +30,7 @@ export const LogoContainer = styled.div`
     max-width: 100%;
     height: auto;
     margin-bottom: ${(props) => (props.nobottom ? '0px' : '10px')};
-   
+
   }
   @keyframes twinkling {
     0% {
@@ -43,13 +43,13 @@ export const LogoContainer = styled.div`
       opacity: 1;
     }
   }
-  
+
   .twinkle {
     animation: twinkling 1.5s forwards;
     animation-iteration-count: 1;
     mix-blend-mode: lighten;
   }
- 
+
 `;
 
 export const ContentBox = styled.div`
@@ -60,25 +60,30 @@ export const ContentBox = styled.div`
   background-color: #030404; // Updated the background-color
   border-radius: 10px;
   max-width: 600px;
-  width: 100%; 
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
-  color: #fff; 
+  color: #fff;
   z-index:1;
 `;
 
-export const Title = styled.h1`
-  margin-bottom: 20px;
-  margin-top:0px;
-  color: #fff;
+export const Title = styled.div`
+  background: linear-gradient(to bottom left, #942626, #fff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  width: 70%;
   text-align: center;
-  font-size: 2.5rem;
-  @media (max-width: 500px) {
+  font-size: xxx-large;
+  font-weight: 700;
+  padding: 2%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.51);;
+  /* @media (max-width: 500px) {
     font-size: 1.5rem;  // Adjusted to a larger, yet responsive size
-  }
+  } */
 `;
 
-export const BigTitle = styled.h1`
+export const BigTitle = styled.div`
   margin-bottom: 20px;
   margin-top:0px;
   color: #fff;
@@ -90,7 +95,7 @@ export const BigTitle = styled.h1`
   bottom: 14vh;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
   font-size: 2.2em;
-  
+
   @media (max-width: 500px) {
     font-size: 1.5rem;  // Adjusted to a larger, yet responsive size
   }
@@ -117,8 +122,8 @@ export const CountdownContainer = styled.div`
 
 export const CountdownText = styled.span`
   font-family: 'Digital-7', sans-serif;
-  font-size: 2em; 
-  color: #fff; 
+  font-size: 2em;
+  color: #fff;
   font-size: 100px;
   @media (min-width: 600px) {
     font-size: 140px; // Adjusted to a fixed pixel value for larger screens
@@ -140,24 +145,24 @@ const shine = keyframes`
 export const RedirectButton = styled.button`
   padding: 0.5em 2em;
   z-index: 1;
-  min-height: 150px; 
-  font-size: 2em; 
+  min-height: 150px;
+  font-size: 2em;
   font-weight: bold;
   cursor: pointer;
-  background: linear-gradient(90deg, #DC143C 25%, #FF0000 50%, #DC143C 75%); 
-  background-size: 220% 220%; 
+  background: linear-gradient(90deg, #DC143C 25%, #FF0000 50%, #DC143C 75%);
+  background-size: 220% 220%;
   color: #ffffff;
   border: none;
   border-radius: 25px;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); /* Comically 3D effect */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   width: auto;
   max-width: 430px;
   margin: 0 auto;
   letter-spacing: normal;
   animation: ${shine} 9s linear infinite;
-  text-transform: none; 
+  text-transform: none;
   white-space: pre-line;
   text-align: center;
   line-height: 1.2;
@@ -184,16 +189,16 @@ export const TopContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 600px;
-  width: 100%; 
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0 auto;
   z-index: 1;
-  position: absolute; 
+  position: absolute;
   top: 7vh;
   img {
     width: auto;
     max-width: 100%;
     height: auto;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 `;
 export const BottomContainer = styled.div`
