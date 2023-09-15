@@ -8,6 +8,10 @@ const useCountdown = (targetDateStr, serverDateStr) => {
   useEffect(() => {
     if (!targetDateStr || !serverDateStr) return;
 
+    // check if countdown is already finished on page landing
+    if (serverDateStr > targetDateStr) {
+      setHasCountdownFinished(true);
+    }
     const targetDate = new Date(targetDateStr);
     const serverDate = new Date(serverDateStr);
     let timeDifference = targetDate - serverDate;

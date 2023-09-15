@@ -23,7 +23,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   z-index:1;
- contrast:2;
+  contrast:2;
   mix-blend-mode: lighten;
   box-shadow: boxShadow: 0px 4px 30px rgba(3, 4, 4, 0.7);
   img {
@@ -53,20 +53,20 @@ export const LogoContainer = styled.div`
 
 `;
 
-export const ContentBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #030404; // Updated the background-color
-  border-radius: 10px;
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  color: #fff;
-  z-index:1;
-`;
+// export const ContentBox = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 20px;
+//   background-color: #030404; // Updated the background-color
+//   border-radius: 10px;
+//   max-width: 600px;
+//   width: 100%;
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   color: #fff;
+//   z-index:1;
+// `;
 
 export const Title = styled.div`
   background: linear-gradient(to bottom left, #942626, #fff);
@@ -96,7 +96,7 @@ export const BigTitle = styled.div`
 
 export const CountdownContainer = styled.div`
   display: flex;
-  min-height: 60px; /* Adjust based on your needs */
+  min-height: 60px;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
@@ -104,9 +104,8 @@ export const CountdownContainer = styled.div`
   max-width: 450px;
   z-index:1;
   height: 150px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
   border-color:#fff;
-  // border-style: solid;
   @media (min-width: 600px) {
     width: 450px;
   }
