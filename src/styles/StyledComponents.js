@@ -140,7 +140,8 @@ export const RedirectButton = styled.button`
   min-height: 100px;
   width: 30%;
   height: 50%;
-  background: linear-gradient(170deg, #81010169, #992f2f, #520a0a);
+  /* background: linear-gradient(170deg, #81010169, #992f2f, #520a0a); */
+  background: linear-gradient(170deg, #81010169, #992f2f59, #594f4f12);
   color: #ffeeee;
   -webkit-background-clip: initial;
   background-clip: initial;
