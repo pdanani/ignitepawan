@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+// import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -121,17 +122,17 @@ export const CountdownText = styled.span`
   }
 `;
 
-const shine = keyframes`
-  0% {
-    background-position: 200% 0%;
-  }
-  50% {
-    background-position: -200% 0%;
-  }
-  100% {
-    background-position: 200% 0%;
-  }
-`;
+// const shine = keyframes`
+//   0% {
+//     background-position: 200% 0%;
+//   }
+//   50% {
+//     background-position: -200% 0%;
+//   }
+//   100% {
+//     background-position: 200% 0%;
+//   }
+// `;
 
 export const RedirectButton = styled.button`
   margin: 2em 0;
