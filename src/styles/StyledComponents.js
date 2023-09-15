@@ -136,8 +136,8 @@ export const CountdownText = styled.span`
 
 export const RedirectButton = styled.button`
   margin: 2em 0;
-  padding: 0.5em 2em;
-  min-width: 230px;
+  padding: 0.5em 1em;
+  min-width: 260px;
   min-height: 100px;
   width: 30%;
   height: 50%;
@@ -147,7 +147,7 @@ export const RedirectButton = styled.button`
   -webkit-background-clip: initial;
   background-clip: initial;
   border-radius: 20px;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
   z-index: 1;
