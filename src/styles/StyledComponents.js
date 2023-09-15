@@ -74,32 +74,23 @@ export const Title = styled.div`
   background-clip: text;
   width: 70%;
   text-align: center;
-  font-size: xxx-large;
+  font-size: xx-large;
   font-weight: 700;
   padding: 2%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.51);;
-  /* @media (max-width: 500px) {
-    font-size: 1.5rem;  // Adjusted to a larger, yet responsive size
-  } */
 `;
 
 export const BigTitle = styled.div`
-  margin-bottom: 20px;
-  margin-top:0px;
-  color: #fff;
+  background: linear-gradient(to bottom left, #942626, #fff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.51);
+  max-width: 70%;
   text-align: center;
-  font-weight: bold;
-  white-space: nowrap;
-  margin-bottom: 10vh;
-  position: absolute;
-  bottom: 14vh;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
-  font-size: 2.2em;
-
-  @media (max-width: 500px) {
-    font-size: 1.5rem;  // Adjusted to a larger, yet responsive size
-  }
-
+  font-size: xx-large;
+  font-weight: 700;
+  padding: 2%;
 `;
 
 export const CountdownContainer = styled.div`
