@@ -65,7 +65,11 @@ const App = () => {
       </LogoContainer>
 
       <BottomContainer>
-        <BigTitle>Something BIG is Coming...</BigTitle>
+        {hasCountdownFinished ?
+          <BigTitle>Something BIG is Coming!</BigTitle> :
+          <BigTitle>Something Big is Coming in...</BigTitle>
+        }
+
         {!hasCountdownFinished && (
           <CountdownContainer>
             <CountdownText>{countdown}</CountdownText>
