@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   min-height: 100vh;
   background-color: #030404;
   width: 100%;
@@ -72,7 +72,7 @@ export const Title = styled.div`
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  width: 70%;
+  max-width: 80%;
   text-align: center;
   font-size: xx-large;
   font-weight: 700;
@@ -86,7 +86,7 @@ export const BigTitle = styled.div`
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.51);
-  max-width: 70%;
+  max-width: 80%;
   text-align: center;
   font-size: xx-large;
   font-weight: 700;
@@ -183,8 +183,8 @@ export const TopContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   z-index: 1;
-  position: absolute;
-  top: 7vh;
+  /* position: absolute; */
+  /* top: 7vh; */
   img {
     width: auto;
     max-width: 100%;
@@ -196,8 +196,8 @@ export const BottomContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 8vh;
+  /* position: absolute; */
+  /* bottom: 8vh; */
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
