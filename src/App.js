@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { Container, Title, CountdownText, LogoContainer, CountdownContainer, RedirectButton, TopContainer, BottomContainer, BigTitle } from './styles/StyledComponents.js';
-import igniteLogo from './styles/Ignite_Color_Final_Web.jpg';
-import pcrLogo from './styles/MicrosoftTeams-image.png';
+import igniteLogo from './images/Ignite_Color_Final_Web.jpg';
+import pcrLogo from './images/MicrosoftTeams-image.png';
 import useCountdown from './hooks/useCountdown';
 import { Fireworks } from '@fireworks-js/react';
 
@@ -12,10 +12,21 @@ const App = () => {
   const [serverDate, setServerDate] = useState(null);
   const ref = useRef(null);
 
+
   const { countdown, hasCountdownFinished } = useCountdown(targetDate, serverDate);
 
   useEffect(() => {
-    fetch('https://f529fbee-8a7e-437e-8ace-8d4cd8c23950.mock.pstmn.io/ignite_status')
+    const isLocal = window.location.host.includes('localhost');
+    const token = isLocal ? 'Jnr97aqtPcoa5ezPjpM2' : 'll8epx5VMEeG7mXd5yvx'
+    const port = isLocal ? ':8082' : '';
+
+    fetch(`https://apps.pcrichard.com${port}/management_sales_conference/api/ignite2023.php`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    })
       .then((res) => res.json())
       .then((data) => {
         setData(data);
