@@ -15,7 +15,7 @@ const App = () => {
   const { countdown, hasCountdownFinished } = useCountdown(targetDate, serverDate);
 
   useEffect(() => {
-    fetch('https://run.mocky.io/v3/84ee4cb9-5d75-4122-8688-807eb02a1835')
+    fetch('https://f529fbee-8a7e-437e-8ace-8d4cd8c23950.mock.pstmn.io/ignite_status')
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -55,7 +55,7 @@ const App = () => {
           zIndex: 0,
         }}
       />
-      )
+
       <TopContainer>
         <img src={pcrLogo} alt="PCRLOGO" style={{ marginBottom: '0' }} />
         <Title>2023 Leadership Conference</Title>
@@ -66,6 +66,7 @@ const App = () => {
 
       <BottomContainer>
         <BigTitle>Something BIG is Coming...</BigTitle>
+
         {!hasCountdownFinished && (
           <CountdownContainer>
             <CountdownText>{countdown}</CountdownText>

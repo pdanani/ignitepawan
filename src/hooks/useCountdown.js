@@ -8,6 +8,10 @@ const useCountdown = (targetDateStr, serverDateStr) => {
   useEffect(() => {
     if (!targetDateStr || !serverDateStr) return;
 
+    // check if countdown is already finished on page landing
+    if (serverDateStr > targetDateStr) {
+      setHasCountdownFinished(true);
+    }
     const targetDate = new Date(targetDateStr);
     const serverDate = new Date(serverDateStr);
     let timeDifference = targetDate - serverDate;
@@ -16,9 +20,9 @@ const useCountdown = (targetDateStr, serverDateStr) => {
       const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, '0');
       const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
       const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, '0');
-      
+
       setCountdown(`${hours}:${minutes}:${seconds}`);
-      
+
       if (hours === '00' && minutes === '00' && seconds === '00') {
         setHasCountdownFinished(true);
       }
